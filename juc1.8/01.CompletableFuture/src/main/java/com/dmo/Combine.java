@@ -16,7 +16,7 @@ public class Combine extends BaseTest {
                     return r1 + r2;
                 }).whenComplete((v, e) -> {
                     if (e == null) {
-                        System.out.println(Thread.currentThread().getName() + "-------result = " + v);
+                        System.out.println(Thread.currentThread().getName() + "-------result in = " + v);
                     }
                 })
                 .exceptionally(e -> {
@@ -24,8 +24,8 @@ public class Combine extends BaseTest {
                     System.out.println(Thread.currentThread().getName() + "--- exception ");
                     return null;
                 });
-
-        System.out.println(Thread.currentThread().getName() + "-------result = " + completableFuture.join());
+        System.out.println("---------");
+        System.out.println(Thread.currentThread().getName() + "-------result out = " + completableFuture.join());
         threadPoolExecutor.shutdown();
     }
 }

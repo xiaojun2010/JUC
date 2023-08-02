@@ -9,17 +9,17 @@ class Phone //资源类
     {
         //暂停几秒钟线程
         try { TimeUnit.SECONDS.sleep(3); } catch (InterruptedException e) { e.printStackTrace(); }
-        System.out.println("-------sendEmail");
+        System.out.println(Thread.currentThread().getName()+"-------sendEmail");
     }
 
     public synchronized void sendSMS()
     {
-        System.out.println("-------sendSMS");
+        System.out.println(Thread.currentThread().getName()+"-------sendSMS");
     }
 
     public void hello()
     {
-        System.out.println("-------hello");
+        System.out.println(Thread.currentThread().getName()+"-------hello");
     }
 }
 
@@ -80,9 +80,9 @@ public class Lock8Demo
         try { TimeUnit.MILLISECONDS.sleep(300); } catch (InterruptedException e) { e.printStackTrace(); }
 
         new Thread(() -> {
-            //phone.sendSMS();
-            //phone.hello();
-            phone2.sendSMS();
+            phone.sendSMS();
+//            phone.hello();
+//            phone2.sendSMS();
         },"b").start();
 
     }
