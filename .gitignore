@@ -1,2 +1,6 @@
 /.idea/
 /juc/target/
+.DS_Store
+*.iml
+juc/juc.iml
+*.iml
