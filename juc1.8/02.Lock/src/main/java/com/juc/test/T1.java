@@ -1,5 +1,7 @@
 package com.juc.test;
 
+
+
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.ExecutionException;
@@ -9,7 +11,7 @@ import java.util.concurrent.ExecutionException;
  * @create 2021-03-01 21:38
  */
 
-@Slf4j
+
 public class T1
 {
 

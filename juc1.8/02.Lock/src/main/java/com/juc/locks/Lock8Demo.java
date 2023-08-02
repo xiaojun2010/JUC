@@ -12,7 +12,7 @@ class Phone //资源类
         System.out.println(Thread.currentThread().getName()+"-------sendEmail");
     }
 
-    public synchronized void sendSMS()
+    public static synchronized void sendSMS()
     {
         System.out.println(Thread.currentThread().getName()+"-------sendSMS");
     }
@@ -80,9 +80,9 @@ public class Lock8Demo
         try { TimeUnit.MILLISECONDS.sleep(300); } catch (InterruptedException e) { e.printStackTrace(); }
 
         new Thread(() -> {
-            phone.sendSMS();
+//            phone.sendSMS();
 //            phone.hello();
-//            phone2.sendSMS();
+            phone2.sendSMS();
         },"b").start();
 
     }

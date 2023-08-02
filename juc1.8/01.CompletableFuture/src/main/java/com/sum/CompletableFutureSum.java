@@ -1,4 +1,4 @@
-package com.dmo;
+package com.sum;
 
 
 
@@ -13,9 +13,9 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 
-public class Test {
+public class CompletableFutureSum {
 
-    static ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(10,20,2L, TimeUnit.MILLISECONDS,new ArrayBlockingQueue<>(200),new ThreadFactory() {
+    static ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2,20,2L, TimeUnit.MILLISECONDS,new ArrayBlockingQueue<>(200),new ThreadFactory() {
         @Override
         public Thread newThread(Runnable r) {
             Thread thread = new Thread(r);
@@ -29,10 +29,15 @@ public class Test {
 
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6,7,9};
-        Test test = new Test();
+        CompletableFutureSum test = new CompletableFutureSum();
         int sum = test.add(arr);
         System.out.println("sum ="+sum);
         threadPoolExecutor.shutdown();
+    }
+
+    public void close(){
+        threadPoolExecutor.shutdown();
+
     }
     public int add(int[] arr){
         if (arr == null ){
