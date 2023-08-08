@@ -3,8 +3,8 @@ package com.juc.atomics;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
- * @auther zzyy
- * @create 2021-03-18 16:42
+ * @auther zhangxiaojun10
+ * @create 2019-03-18 16:42
  */
 public class AtomicIntegerArrayDemo
 {

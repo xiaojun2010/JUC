@@ -11,6 +11,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class CompletableFutureSum {
@@ -28,7 +29,7 @@ public class CompletableFutureSum {
 
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,7,9};
+        int[] arr = {1,2,3,4,5,6,7,8,9};
         CompletableFutureSum test = new CompletableFutureSum();
         int sum = test.add(arr);
         System.out.println("sum ="+sum);
@@ -56,18 +57,26 @@ public class CompletableFutureSum {
             start = end;
             end = end+step;
         }
+//       int sum1 =  list.parallelStream().map(CompletableFuture::join).reduce(0,Integer::sum);
+//        System.out.println("--------"+sum1+"\t"+count.get());
+//        int sum2 = list.stream().map(CompletableFuture::join).reduce(0,Integer::sum);
+//        int sum3 = list.stream().map(CompletableFuture::join).reduce(0,Integer::sum);
+//        System.out.println("sum1 = "+sum1 +" \t sum2="+sum2+"\t"+count.get());
+//        System.out.println("sum1 = "+sum1 +" \t sum3="+sum3+"\t"+count.get());
+//        return sum2;
         return list.stream().map(CompletableFuture::join).reduce(0,Integer::sum);
-
     }
 
     public  CompletableFuture<Integer> getCompletableFuture(int[] arr, int start,int end){
         return CompletableFuture.supplyAsync(() -> sum(arr,start,end),threadPoolExecutor);
     }
+    volatile AtomicInteger count = new AtomicInteger(0);
     public  int sum(int[] arr,int start,int end){
         int res = 0;
         for (int i = start;i<Math.min(end,arr.length);i++){
             res += arr[i];
         }
+        count.addAndGet(1);
         System.out.println(Thread.currentThread().getName()+" - res = "+res + "  start="+start+"  ,end="+end);
         return res;
     }

@@ -3,8 +3,8 @@ package com.juc.lockupgrade;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
- * @auther zzyy
- * @create 2021-03-28 17:02
+ * @auther zhangxiaojun10
+ * @create 2019-03-28 17:02
  */
 public class MyObject
 {

@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicMarkableReference;
 
 /**
- * @auther zzyy
- * @create 2021-03-22 14:14
+ * @auther zhangxiaojun10
+ * @create 2019-03-22 14:14
  */
 public class AtomicMarkableReferenceDemo
 {
@@ -24,7 +24,7 @@ public class AtomicMarkableReferenceDemo
             boolean marked = atomicMarkableReference.isMarked();
             System.out.println(Thread.currentThread().getName()+"\t"+"---默认修改标识："+marked);
             try { TimeUnit.SECONDS.sleep(2); } catch (InterruptedException e) { e.printStackTrace(); }
-            boolean b = atomicMarkableReference.compareAndSet(100, 20210308, marked, !marked);
+            boolean b = atomicMarkableReference.compareAndSet(100, 20190308, marked, !marked);
 
             System.out.println(Thread.currentThread().getName()+"\t"+"---操作是否成功:"+b);
             System.out.println(Thread.currentThread().getName()+"\t"+atomicMarkableReference.getReference());

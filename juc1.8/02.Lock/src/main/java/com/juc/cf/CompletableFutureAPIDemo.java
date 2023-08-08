@@ -12,8 +12,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 /**
- * @auther zzyy
- * @create 2021-03-02 17:54
+ * @auther zhangxiaojun10
+ * @create 2019-03-02 17:54
  */
 public class CompletableFutureAPIDemo {
     public static void main(String[] args) throws ExecutionException, InterruptedException, TimeoutException {

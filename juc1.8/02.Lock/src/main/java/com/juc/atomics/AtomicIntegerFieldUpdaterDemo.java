@@ -24,8 +24,8 @@ class BankAccount
 
 
 /**
- * @auther zzyy
- * @create 2021-03-18 17:20
+ * @auther zhangxiaojun10
+ * @create 2019-03-18 17:20
  */
 public class AtomicIntegerFieldUpdaterDemo
 {

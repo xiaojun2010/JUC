@@ -19,8 +19,8 @@ class User
 
 
 /**
- * @auther zzyy
- * @create 2021-03-19 11:39
+ * @auther zhangxiaojun10
+ * @create 2019-03-19 11:39
  */
 public class AtomicReferenceDemo
 {

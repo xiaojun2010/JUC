@@ -5,8 +5,8 @@ import java.util.concurrent.atomic.LongAdder;
 import java.util.function.LongBinaryOperator;
 
 /**
- * @auther zzyy
- * @create 2021-03-19 15:59
+ * @auther zhangxiaojun10
+ * @create 2019-03-19 15:59
  */
 public class LongAdderAPIDemo
 {

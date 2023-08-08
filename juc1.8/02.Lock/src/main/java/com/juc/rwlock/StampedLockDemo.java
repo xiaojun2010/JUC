@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.StampedLock;
 
 /**
- * @auther zzyy
- * @create 2021-03-29 11:35
+ * @auther zhangxiaojun10
+ * @create 2019-03-29 11:35
  */
 public class StampedLockDemo
 {

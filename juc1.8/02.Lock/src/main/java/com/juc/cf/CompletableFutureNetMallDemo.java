@@ -10,8 +10,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
- * @auther zzyy
- * @create 2021-03-08 15:28
+ * @auther zhangxiaojun10
+ * @create 2019-03-08 15:28
  * <p>
  * 案例说明：电商比价需求
  * 1 同一款产品，同时搜索出同款产品在各大电商的售价;

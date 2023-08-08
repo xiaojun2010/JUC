@@ -3,8 +3,8 @@ package com.juc.bashthread;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @auther zzyy
- * @create 2021-03-08 15:12
+ * @auther zhangxiaojun10
+ * @create 2019-03-08 15:12
  *
  * 演示守护线程和用户线程
  */

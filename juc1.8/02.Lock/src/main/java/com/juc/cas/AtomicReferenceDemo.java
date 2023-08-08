@@ -7,8 +7,8 @@ import lombok.ToString;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * @auther zzyy
- * @create 2021-03-19 22:13
+ * @auther zhangxiaojun10
+ * @create 2019-03-19 22:13
  */
 public class AtomicReferenceDemo
 {

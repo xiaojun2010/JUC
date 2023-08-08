@@ -4,8 +4,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * @auther zzyy
- * @create 2021-03-03 18:20
+ * interrupt 中断协商机制
+ * @auther zhangxiaojun10
+ * @create 2019-03-03 18:20
  */
 public class InterruptDemo
 {
@@ -14,13 +15,15 @@ public class InterruptDemo
 
     public static void main(String[] args)
     {
-        System.out.println(Thread.currentThread().getName()+"---"+Thread.interrupted());
-        System.out.println(Thread.currentThread().getName()+"---"+Thread.interrupted());
-        System.out.println("111111");
-        Thread.currentThread().interrupt();///----false---> true
-        System.out.println("222222");
-        System.out.println(Thread.currentThread().getName()+"---"+Thread.interrupted());
-        System.out.println(Thread.currentThread().getName()+"---"+Thread.interrupted());
+//        System.out.println(Thread.currentThread().getName()+"---"+Thread.interrupted());
+//        System.out.println(Thread.currentThread().getName()+"---"+Thread.interrupted());
+//        System.out.println("111111");
+//        Thread.currentThread().interrupt();///----false---> true
+//        System.out.println("222222");
+//        System.out.println(Thread.currentThread().getName()+"---"+Thread.interrupted());
+//        System.out.println(Thread.currentThread().getName()+"---"+Thread.interrupted());
+
+        m4();
     }
 
     public static void m5()
@@ -80,10 +83,10 @@ public class InterruptDemo
         Thread t1 = new Thread(() -> {
             while (true) {
                 if (Thread.currentThread().isInterrupted()) {
-                    System.out.println("-----isInterrupted() = true，程序结束。");
+                    System.out.println(Thread.currentThread().getName()+"-----isInterrupted() = true，程序结束。");
                     break;
                 }
-                System.out.println("------hello Interrupt");
+                System.out.println(Thread.currentThread().getName()+"------hello Interrupt");
             }
         }, "t1");
         t1.start();
@@ -130,10 +133,10 @@ public class InterruptDemo
             {
                 if(isStop)
                 {
-                    System.out.println("-----isStop = true，程序结束。");
+                    System.out.println(Thread.currentThread().getName()+"-----isStop = true，程序结束。");
                     break;
                 }
-                System.out.println("------hello isStop");
+                System.out.println(Thread.currentThread().getName()+"------hello isStop");
             }
         },"t1").start();
 

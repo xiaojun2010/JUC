@@ -11,6 +11,8 @@
     <modules>
         <module>01.CompletableFuture</module>
         <module>02.Lock</module>
+        <module>03.algorithm</module>
+        <module>04.Design_Patterns</module>
     </modules>
 
     <properties>

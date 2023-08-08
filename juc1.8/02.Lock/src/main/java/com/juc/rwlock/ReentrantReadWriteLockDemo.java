@@ -49,8 +49,8 @@ class MyResource
 
 
 /**
- * @auther zzyy
- * @create 2021-03-28 11:04
+ * @auther zhangxiaojun10
+ * @create 2019-03-28 11:04
  */
 public class ReentrantReadWriteLockDemo
 {

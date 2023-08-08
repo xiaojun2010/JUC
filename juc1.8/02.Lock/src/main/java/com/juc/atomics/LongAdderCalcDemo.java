@@ -44,8 +44,8 @@ class ClickNumber
 
 
 /**
- * @auther zzyy
- * @create 2021-03-19 16:08
+ * @auther zhangxiaojun10
+ * @create 2019-03-19 16:08
  *
  *  50个线程，每个线程100W次，总点赞数出来
  */

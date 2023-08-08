@@ -3,8 +3,8 @@ package com.juc.objecthead;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
- * @auther zzyy
- * @create 2021-03-26 15:27
+ * @auther zhangxiaojun10
+ * @create 2019-03-26 15:27
  */
 public class ObjectHeadDemo
 {

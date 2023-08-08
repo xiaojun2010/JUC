@@ -5,8 +5,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicStampedReference;
 
 /**
- * @auther zzyy
- * @create 2021-03-18 15:34
+ * @auther zhangxiaojun10
+ * @create 2019-03-18 15:34
  */
 public class ABADemo
 {
@@ -32,7 +32,7 @@ public class ABADemo
             System.out.println(Thread.currentThread().getName()+"\t"+"---默认版本号: "+stamp);
             //上前面的t3完成ABA问题
             try { TimeUnit.SECONDS.sleep(3); } catch (InterruptedException e) { e.printStackTrace(); }
-            boolean result = atomicStampedReference.compareAndSet(100, 20210308, stamp, stamp + 1);
+            boolean result = atomicStampedReference.compareAndSet(100, 20190308, stamp, stamp + 1);
             System.out.println(Thread.currentThread().getName()+"\t"+"---操作成功否："+result+"\t"+atomicStampedReference.getStamp()+"\t"+atomicStampedReference.getReference());
         },"t4").start();
     }
@@ -48,7 +48,7 @@ public class ABADemo
         try { TimeUnit.MILLISECONDS.sleep(10); } catch (InterruptedException e) { e.printStackTrace(); }
 
         new Thread(() -> {
-            boolean b = atomicInteger.compareAndSet(100, 20210308);
+            boolean b = atomicInteger.compareAndSet(100, 20190308);
             System.out.println(Thread.currentThread().getName()+"\t"+"修改成功否："+b+"\t"+atomicInteger.get());
         },"t2").start();
     }

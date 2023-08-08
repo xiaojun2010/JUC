@@ -14,8 +14,8 @@ class MyNumber
 }
 
 /**
- * @auther zzyy
- * @create 2021-03-17 16:26
+ * @auther zhangxiaojun10
+ * @create 2019-03-17 16:26
  */
 public class AtomicIntegerDemo
 {

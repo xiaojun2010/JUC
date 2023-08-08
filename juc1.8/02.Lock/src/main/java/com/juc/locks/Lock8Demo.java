@@ -25,8 +25,8 @@ class Phone //资源类
 
 
 /**
- * @auther zzyy
- * @create 2021-03-03 15:00
+ * @auther zhangxiaojun10
+ * @create 2019-03-03 15:00
    题目：谈谈你对多线程锁的理解。
 
  * 线程   操作  资源类  8锁案例说明

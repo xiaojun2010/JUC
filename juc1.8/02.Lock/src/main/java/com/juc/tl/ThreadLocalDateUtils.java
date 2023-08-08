@@ -5,8 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @auther zzyy
- * @create 2021-03-23 15:46
+ * @auther zhangxiaojun10
+ * @create 2019-03-23 15:46
  */
 public class ThreadLocalDateUtils
 {

@@ -3,7 +3,7 @@ package com.juc.locks;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @auther zzyy
+ * @auther zhangxiaojun10
  * @create 2020-07-09 18:43
  */
 public class DeadLockDemo

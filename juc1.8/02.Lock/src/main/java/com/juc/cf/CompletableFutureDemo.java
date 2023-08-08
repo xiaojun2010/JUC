@@ -7,8 +7,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @auther zzyy
- * @create 2021-03-02 11:56
+ * @auther zhangxiaojun10
+ * @create 2019-03-02 11:56
  */
 public class CompletableFutureDemo
 {

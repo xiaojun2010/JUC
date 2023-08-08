@@ -1,8 +1,8 @@
 package com.juc.jmm;
 
 /**
- * @auther zzyy
- * @create 2021-03-17 15:00
+ * @auther zhangxiaojun10
+ * @create 2019-03-17 15:00
  */
 public class SafeDoubleCheckSingleton
 {

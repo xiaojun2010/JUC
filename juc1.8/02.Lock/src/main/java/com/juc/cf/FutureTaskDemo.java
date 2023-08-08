@@ -7,8 +7,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 /**
- * @auther zzyy
- * @create 2021-03-02 11:19
+ * @auther zhangxiaojun10
+ * @create 2019-03-02 11:19
  */
 public class FutureTaskDemo
 {

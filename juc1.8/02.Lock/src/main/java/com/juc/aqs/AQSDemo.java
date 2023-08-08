@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @auther zzyy
- * @create 2021-03-27 15:46
+ * @auther zhangxiaojun10
+ * @create 2019-03-27 15:46
  */
 public class AQSDemo
 {

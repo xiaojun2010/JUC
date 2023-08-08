@@ -24,8 +24,8 @@ class MyVar
 
 
 /**
- * @auther zzyy
- * @create 2021-03-22 15:20
+ * @auther zhangxiaojun10
+ * @create 2019-03-22 15:20
  *  多线程并发调用一个类的初始化方法，如果未被初始化过，将执行初始化工作，要求只能初始化一次
  */
 public class AtomicReferenceFieldUpdaterDemo

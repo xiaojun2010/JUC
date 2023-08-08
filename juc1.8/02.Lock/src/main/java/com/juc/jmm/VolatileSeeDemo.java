@@ -1,8 +1,8 @@
 package com.juc.jmm;
 
 /**
- * @auther zzyy
- * @create 2021-03-15 19:13
+ * @auther zhangxiaojun10
+ * @create 2019-03-15 19:13
  */
 public class VolatileSeeDemo
 {

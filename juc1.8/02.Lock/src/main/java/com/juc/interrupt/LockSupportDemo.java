@@ -7,7 +7,7 @@ import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @auther zzyy
+ * @auther zhangxiaojun10
  * @create 2020-07-10 14:05
  */
 public class LockSupportDemo
@@ -19,20 +19,22 @@ public class LockSupportDemo
 
     public static void main(String[] args)
     {
-        Thread t1 = new Thread(() -> {
-            System.out.println(Thread.currentThread().getName() + "\t" + "---come in");
-            LockSupport.park();
-            LockSupport.park();
-            System.out.println(Thread.currentThread().getName() + "\t" + "---被唤醒");
-        }, "t1");
-        t1.start();
+//        Thread t1 = new Thread(() -> {
+//            System.out.println(Thread.currentThread().getName() + "\t" + "---come in");
+//            LockSupport.park();
+//            LockSupport.park();
+//            System.out.println(Thread.currentThread().getName() + "\t" + "---被唤醒");
+//        }, "t1");
+//        t1.start();
+//
+//        new Thread(() -> {
+//            LockSupport.unpark(t1);
+//            try { TimeUnit.SECONDS.sleep(3); } catch (InterruptedException e) { e.printStackTrace(); }
+//            LockSupport.unpark(t1);
+//            System.out.println(Thread.currentThread().getName()+"\t"+"---发出通知");
+//        },"t2").start();
 
-        new Thread(() -> {
-            LockSupport.unpark(t1);
-            try { TimeUnit.SECONDS.sleep(3); } catch (InterruptedException e) { e.printStackTrace(); }
-            LockSupport.unpark(t1);
-            System.out.println(Thread.currentThread().getName()+"\t"+"---发出通知");
-        },"t2").start();
+        lockAwaitSignal();
     }
 
 

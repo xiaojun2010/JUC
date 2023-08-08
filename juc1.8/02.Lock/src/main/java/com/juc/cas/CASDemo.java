@@ -3,8 +3,8 @@ package com.juc.cas;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @auther zzyy
- * @create 2021-03-17 15:13
+ * @auther zhangxiaojun10
+ * @create 2019-03-17 15:13
  */
 public class CASDemo
 {

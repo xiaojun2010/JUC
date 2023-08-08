@@ -3,8 +3,8 @@ package com.juc.jmm;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @auther zzyy
- * @create 2021-03-17 14:59
+ * @auther zhangxiaojun10
+ * @create 2019-03-17 14:59
  */
 class MyNumber
 {

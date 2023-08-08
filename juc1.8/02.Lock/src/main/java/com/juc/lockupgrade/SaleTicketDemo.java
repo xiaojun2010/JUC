@@ -20,8 +20,8 @@ class TrainTicket
 
 
 /**
- * @auther zzyy
- * @create 2021-03-27 11:27
+ * @auther zhangxiaojun10
+ * @create 2019-03-27 11:27
  */
 public class SaleTicketDemo
 {

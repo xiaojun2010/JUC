@@ -8,7 +8,7 @@ class Ticket
 {
     private int number = 50;
 
-    private Lock lock = new ReentrantLock(true); //默认用的是非公平锁，分配的平均一点，=--》公平一点
+    private Lock lock = new ReentrantLock(false); //默认用的是非公平锁，分配的平均一点，=--》公平一点
     public void sale()
     {
         lock.lock();
@@ -40,7 +40,7 @@ class Ticket
 }
 
 /**
- * @auther zzyy
+ * @auther zhangxiaojun10
  * @create 2020-07-09 17:48
  */
 public class SaleTicketDemo
