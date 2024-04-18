@@ -36,5 +36,7 @@ public class AtomicReferenceDemo
         System.out.println(atomicReferenceUser.compareAndSet(z3,li4)+"\t"+atomicReferenceUser.get().toString());
         System.out.println(atomicReferenceUser.compareAndSet(z3,li4)+"\t"+atomicReferenceUser.get().toString());
 
+        System.out.println(atomicReferenceUser.compareAndSet(li4,z3)+"\t"+atomicReferenceUser.get().toString());
+
     }
 }

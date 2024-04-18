@@ -1,0 +1,14 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,com/ibeetl/code/ch05/CloneUtilTest.init
+inline,com/ibeetl/code/ch05/CloneUtilTest.testCloneByHardCode
+inline,com/ibeetl/code/ch05/CloneUtilTest.testCloneByJson
+inline,com/ibeetl/code/ch05/CloneUtilTest.testCloneByObjectWriter
+inline,com/ibeetl/code/ch05/CloneUtilTest.testCloneBySelma
+inline,com/ibeetl/code/ch05/messagePack/PackTest.corePackProudct
+inline,com/ibeetl/code/ch05/messagePack/PackTest.init
+inline,com/ibeetl/code/ch05/messagePack/PackTest.jackson
+inline,com/ibeetl/code/ch05/messagePack/PackTest.packObject

@@ -1,0 +1,13 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+dontinline,com/ibeetl/code/ch07/ClientTest.bytecode
+dontinline,com/ibeetl/code/ch07/InlineTest.add
+inline,com/ibeetl/code/ch07/ClientTest.init
+inline,com/ibeetl/code/ch07/ClientTest.machinecode
+inline,com/ibeetl/code/ch07/InlineTest.init
+inline,com/ibeetl/code/ch07/virtuals/VirtualCallTest.call
+inline,com/ibeetl/code/ch07/virtuals/VirtualCallTest.staticCall
+print,com/ibeetl/code/ch07/InlineTest.addInline

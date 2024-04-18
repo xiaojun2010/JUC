@@ -1,0 +1,6 @@
+com/ibeetl/code/ch09/tracer/TracerConfig.class
+com/ibeetl/code/ch09/tracer/TestSample.class
+com/ibeetl/code/ch09/tracer/TracerAgent.class
+com/ibeetl/code/ch09/tracer/Metric.class
+com/ibeetl/code/ch09/tracer/MyMethodTransformer.class
+com/ibeetl/code/ch09/tracer/ClientTracer.class

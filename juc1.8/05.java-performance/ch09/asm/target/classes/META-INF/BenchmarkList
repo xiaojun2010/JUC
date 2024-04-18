@@ -1,0 +1,3 @@
+JMH S 39 com.ibeetl.code.ch09.BeanValueBenchmark S 67 com.ibeetl.code.ch09.jmh_generated.BeanValueBenchmark_byAsm_jmhTest S 5 byAsm S 11 AverageTime E A 1 1 1 E I 2 10 T 3 1 s E I 1 5 T 3 1 s E I 1 1 E E E E E E U 11 NANOSECONDS E E 
+JMH S 39 com.ibeetl.code.ch09.BeanValueBenchmark S 75 com.ibeetl.code.ch09.jmh_generated.BeanValueBenchmark_byRelectBeans_jmhTest S 13 byRelectBeans S 11 AverageTime E A 1 1 1 E I 2 10 T 3 1 s E I 1 5 T 3 1 s E I 1 1 E E E E E E U 11 NANOSECONDS E E 
+JMH S 39 com.ibeetl.code.ch09.BeanValueBenchmark S 68 com.ibeetl.code.ch09.jmh_generated.BeanValueBenchmark_direct_jmhTest S 6 direct S 11 AverageTime E A 1 1 1 E I 2 10 T 3 1 s E I 1 5 T 3 1 s E I 1 1 E E E E E E U 11 NANOSECONDS E E 

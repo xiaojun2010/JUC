@@ -37,7 +37,7 @@ public class AtomicReferenceFieldUpdaterDemo
         for (int i = 1; i <=5; i++) {
             new Thread(() -> {
                 myVar.init(myVar);
-            },String.valueOf(i)).start();
+            },"t"+i ).start();
         }
     }
 }

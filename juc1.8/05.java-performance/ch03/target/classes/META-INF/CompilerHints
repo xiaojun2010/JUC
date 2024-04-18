@@ -1,0 +1,16 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,com/ibeetl/code/ch03/CountBenchmark.atomicAdd
+inline,com/ibeetl/code/ch03/CountBenchmark.synchronizedAdd
+inline,com/ibeetl/code/ch03/mutiple/jmh/BaseJmhQosThreadPool.close
+inline,com/ibeetl/code/ch03/mutiple/jmh/BaseJmhQosThreadPool.init
+inline,com/ibeetl/code/ch03/mutiple/jmh/BaseJmhQosThreadPool.qosPool
+inline,com/ibeetl/code/ch03/mutiple/jmh/JmhLargeNumQueue.init
+inline,com/ibeetl/code/ch03/mutiple/jmh/JmhPolicyQueue.init
+inline,com/ibeetl/code/ch03/mutiple/jmh/JmhThreadSinglePool.close
+inline,com/ibeetl/code/ch03/mutiple/jmh/JmhThreadSinglePool.init
+inline,com/ibeetl/code/ch03/mutiple/jmh/JmhThreadSinglePool.jdk
+inline,com/ibeetl/code/ch03/mutiple/jmh/JmhThreadSinglePool.mutilPoolJdk

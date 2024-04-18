@@ -18,18 +18,18 @@ public class SpinLockDemo
 
     public void MyLock()
     {
-        System.out.println(Thread.currentThread().getName()+"\t"+"---come in");
+        System.out.println(System.currentTimeMillis()+"\t"+Thread.currentThread().getName()+"\t"+"---come in");
         while(!atomicReference.compareAndSet(null,Thread.currentThread()))
         {
 
         }
-        System.out.println(Thread.currentThread().getName()+"\t"+"---持有锁成功");
+        System.out.println(System.currentTimeMillis()+"\t"+Thread.currentThread().getName()+"\t"+"---持有锁成功");
     }
 
     public void MyUnLock()
     {
         atomicReference.compareAndSet(Thread.currentThread(),null);
-        System.out.println(Thread.currentThread().getName()+"\t"+"---释放锁成功");
+        System.out.println(System.currentTimeMillis()+"\t"+Thread.currentThread().getName()+"\t"+"---释放锁成功");
     }
 
     public static void main(String[] args)
